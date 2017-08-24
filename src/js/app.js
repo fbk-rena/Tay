@@ -7,11 +7,13 @@ const itunes = {
     tay: "https://itunes.apple.com/search?term=taylor+swift&entity=song&limit=250"
 };
 const songLayout = `<li class="collection-item avatar">
-                    <img src="__img__" alt="" class="circle">
-                    <span class="title">__title__</span>
-                    <p>__collection__</p>
-                    <a href="#!" class="secondary-content">__id__</a>
-                </li>`;
+                        <img src="__img__" alt="" class="circle">
+                        <div class="row">
+                            <span class="title ">__title__</span>
+                            <span>__collection__</span>
+                            <span href="#!" class="secondary-content">__id__</span>
+                        </div>
+                    </li>`;
 const playlist = $("#taysongs");
 const loadSongs = function () {
     $.getJSON(itunes.tay, function (response) {
