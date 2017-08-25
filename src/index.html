@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="static/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,45 +13,39 @@
 
 <body>
     <header>
-
         <div class="navbar-fixed transparent">
-            <form>
-                <div class="input-field">
-                    <input id="search" type="search" required>
-                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                    <i class="material-icons">close</i>
-                </div>
-            </form>
-            <nav class="purple darken-3">
+            <nav class=" deep-purple darken-1">
                 <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo">TayTay</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="sass.html">Sass</a></li>
-                        <li><a href="badges.html">Components</a></li>
-                    </ul>
+                    <a href="#!" class="brand-logo center">Taylor Swift Songs</a>
+                    <form class="right">
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
                 </div>
             </nav>
         </div>
     </header>
     <main class="container">
-        <section class="row">
-            <div class="col s8">
-                <ul id="taysongs" class="collection">
-                    <li class="collection-item avatar">
-                        <img src="__img__" alt="" class="circle">
-                        <div class="row">
-                            <span class="title ">__title__</span>
-                            <span>__collection__</span>
-                            <span href="#!" class="secondary-content">__id__</span>
-                        </div>
-                    </li>
-                </ul>
+        <section class="contenedor row">
+            <div id="plalist" class="col m7 s9">
+                <ol id="taysongs" class="collection">
+
+                </ol>
             </div>
+            <aside id="others" class="col m4 s3 hide-on-med-and-down">
+                <div>
+                    <div class="row">
+                        <h4 class=" cyan-text text-accent-4">Hot tracks</h4>
+                    </div>
+                    <div id="collections">
 
+                    </div>
+                </div>
+            </aside>
         </section>
-        <aside class="container others">
-
-        </aside>
     </main>
 
 
